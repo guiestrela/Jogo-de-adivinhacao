@@ -1,7 +1,6 @@
 let numeroSecreto = gerarNumeroAleatorio();
 let tentativas = 1;
 
-
 function exibirTextoNaTela(tag, texto) {
     let campo = document.querySelector(tag);
     campo.innerHTML = texto;
@@ -14,7 +13,6 @@ function exibirMessagemInicial() {
 }
 
 exibirMessagemInicial();
-
 
 function verificarChute() {
     let chute = document.querySelector('input').value;
