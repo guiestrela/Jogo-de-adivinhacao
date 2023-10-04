@@ -1,6 +1,7 @@
 let numeroSecreto = gerarNumeroAleatorio();
 let tentativas = 1;
 
+
 function exibirTextoNaTela(tag, texto) {
     let campo = document.querySelector(tag);
     campo.innerHTML = texto;
@@ -8,7 +9,7 @@ function exibirTextoNaTela(tag, texto) {
 
 function exibirMessagemInicial() {
     exibirTextoNaTela('h1', 'jogodo numero secreto');
-    exibirTextoNaTela('p','Escolha um numero entre 1 e 10');
+    exibirTextoNaTela('p',`Escolha um numero entre 1 e 100`);
 }
 
 exibirMessagemInicial();
@@ -34,7 +35,7 @@ function verificarChute() {
 }
 
 function gerarNumeroAleatorio() {
-    return parseInt(Math.random() * 10 + 1);
+    return parseInt(Math.random() * 100 + 1);
 }
 
 function limparCampo() {
